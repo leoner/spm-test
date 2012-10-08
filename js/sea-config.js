@@ -1,3 +1,4 @@
+define(function(require, exports, module) { // 这行去掉
     seajs.config({
         alias: {
             jquery: 'src/lib/ext/jquery/1.7.2/jquery'
@@ -8,3 +9,4 @@
         // base: '',
         charset: 'utf-8'
     });
+}); // 这行去掉
