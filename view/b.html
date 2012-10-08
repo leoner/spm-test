@@ -3,11 +3,20 @@
 <head>
     <title>page b</title>
     <meta charset="utf-8"/>
-    <script src="../js/sea.js"></script>
-    <script>
-        seajs.use('../js/sea-config.js', function() {
-            seajs.use('../js/src/app/b.js');
+    <script src="../public/sea.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        seajs.config({
+            preload: [],
+            map: [],
+            charset: 'utf-8'
         });
+ 
+    </script>
+    <script>
+       seajs.use(['app/0.0.1/a', 'app/0.0.1/b'], function(a, b) {
+          a.say();
+          b.say();
+       });
     </script>
 </head>
 <body>

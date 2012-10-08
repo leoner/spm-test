@@ -1,4 +1,11 @@
 {
-    "name": "spm-test",
-    "output": {}
+    "name": "app",
+    "version": "0.0.1",
+    "dependencies": {
+      "jquery": "jquery/1.8.1/jquery"
+    },
+    "output": {
+      "a.js": ".",
+      "b.js": "."
+    }
 }

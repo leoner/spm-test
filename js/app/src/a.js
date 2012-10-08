@@ -5,9 +5,13 @@
  */
 define(function(require, exports, module) {
     var $ = require('jquery');
-    var win = require('../lib/cmp/core/win');
+    var win = require('./lib/cmp/core/win');
 
     $(function() {
         (new win()).render();
     });
+
+    exports.say = function() {
+        console.log('hello module a');
+    };
 });

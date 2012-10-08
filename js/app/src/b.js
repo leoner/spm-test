@@ -5,8 +5,8 @@
  */
 define(function(require, exports, module) {
     var $ = require('jquery');
-    var win = require('../lib/cmp/core/win');
-    var ajax = require('../lib/util/core/ajax');
+    var win = require('./lib/cmp/core/win');
+    var ajax = require('./lib/util/core/ajax');
 
     $(function() {
         ajax.get('/data/you/want', function() {
@@ -14,4 +14,8 @@ define(function(require, exports, module) {
             (new win()).render();
         });
     });
+
+    exports.say = function() {
+        console.log('hello module b');
+    };
 });
