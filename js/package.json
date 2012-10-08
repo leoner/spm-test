@@ -1,9 +1,4 @@
 {
     "name": "spm-test",
-    "output": {
-        "lib/core-all.js": ["util/core/*", "cmp/core/*"],
-        "*": {
-            "excludes": ["ext/jquery/1.7.2/jquery"]
-        }
-    }
+    "output": {}
 }
